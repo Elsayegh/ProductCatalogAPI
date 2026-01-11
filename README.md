@@ -14,7 +14,7 @@ This was **heavy work**, especially around Cosmos DB’s SDK, partitioning model
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Full CRUD operations for Products
 - Cosmos DB integration using `CosmosClient`
@@ -25,7 +25,7 @@ This was **heavy work**, especially around Cosmos DB’s SDK, partitioning model
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - **ASP.NET Core 8**
 - **Azure Cosmos DB (Core SQL API)**
@@ -35,7 +35,7 @@ This was **heavy work**, especially around Cosmos DB’s SDK, partitioning model
 
 ---
 
-## 📦 Endpoints
+##  Endpoints
 
 ### `GET /api/Products`
 Returns all products.
