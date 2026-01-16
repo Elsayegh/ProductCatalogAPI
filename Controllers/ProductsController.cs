@@ -55,5 +55,27 @@ namespace ProductCatalogAPI.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("category/{category}")]
+        public async Task<IActionResult> GetByCategory(string category)
+        {
+            var products = await _repository.GetByCategoryAsync(category);
+            return Ok(products);
+        }
+
+        [HttpGet("paged")]
+        public async Task<IActionResult> GetPaged(int pageNumber = 1, int pageSize = 10)
+        {
+            var products = await _repository.GetPagedAsync(pageNumber, pageSize);
+            return Ok(products);
+        }
+
+        [HttpPost("batch/{category}")]
+        public async Task<IActionResult> BatchInsert(string category, [FromBody]IEnumerable<Product> products)
+        {
+            var inserted = await _repository.BatchInsertAsync(category, products);
+
+            return Ok(new { inserted });
+        }
     }
 }

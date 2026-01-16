@@ -1,0 +1,13 @@
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    { "path": "/id/?" },
+    { "path": "/name/?" },
+    { "path": "/category/?" },
+    { "path": "/price/?" }
+  ],
+  "excludedPaths": [
+    { "path": "/*" }
+  ]
+}
